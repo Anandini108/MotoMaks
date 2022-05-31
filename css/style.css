@@ -1,0 +1,693 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*----------ОСНОВНОЕ----------*/
+body{
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #141415;
+	font-size: 15px;
+	line-height: 1.4;
+}
+a{
+	color:#fff;
+}
+.container{
+	max-width: 1200px;
+	margin: 0px auto;
+}
+.wrapper{
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.main{
+	flex-grow: 1;
+}
+/*----------HEADER------------------------------*/
+header{
+	background-color: #141415;
+	position: fixed;
+	width:100%;
+	padding: 7px 20px 0px 20px;
+	z-index:2;
+	top:0;
+}
+.header__wrapper{
+	width: 100%;
+	background: rgb(194,169,112);
+	background: radial-gradient(circle, rgba(194,169,112,1) 12%, rgba(20,20,21,1) 100%);
+}
+header a{
+	color:#5F0A0A;
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: 
+		-0   -1px 0   #D1B8B8,
+		 0   -1px 0   #D1B8B8,
+		-0    1px 0   #D1B8B8,
+		 0    1px 0   #D1B8B8,
+		-1px -0   0   #D1B8B8,
+		 1px -0   0   #D1B8B8,
+		-1px  0   0   #D1B8B8,
+		 1px  0   0   #D1B8B8,
+		-1px -1px 0   #D1B8B8,
+		 1px -1px 0   #D1B8B8,
+		-1px  1px 0   #D1B8B8,
+		 1px  1px 0   #D1B8B8,
+		-1px -1px 0   #D1B8B8,
+		 1px -1px 0   #D1B8B8,
+		-1px  1px 0   #D1B8B8,
+		 1px  1px 0   #D1B8B8;
+}
+.icon{
+	font-family: 'Bangers', cursive;
+	font-size: 25px;
+	letter-spacing: 4px;
+	color:#5f0a0a;
+	text-shadow: 
+		-0   -1px 0   #FCFCFC,
+		 0   -1px 0   #FCFCFC,
+		-0    1px 0   #FCFCFC,
+		 0    1px 0   #FCFCFC,
+		-1px -0   0   #FCFCFC,
+		 1px -0   0   #FCFCFC,
+		-1px  0   0   #FCFCFC,
+		 1px  0   0   #FCFCFC,
+		-1px -1px 0   #FCFCFC,
+		 1px -1px 0   #FCFCFC,
+		-1px  1px 0   #FCFCFC,
+		 1px  1px 0   #FCFCFC,
+		-1px -1px 0   #FCFCFC,
+		 1px -1px 0   #FCFCFC,
+		-1px  1px 0   #FCFCFC,
+		 1px  1px 0   #FCFCFC;
+}
+.header__container{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	width: 100%;
+ 	padding: 4px;
+ 	align-items: center;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+.menu__item{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 15px 20px;
+	border-radius: 5px;
+	display: block;
+}
+.menu__item:hover{
+	background-color: rgb(63 51 29);
+	color: #fff;
+	transition: 0.5s ease;
+	transition-property: background-color, color;
+	text-shadow:none;
+}
+nav{
+	width: 80%;
+}
+
+/*-----------upper-block--------------*/
+.Maks{
+	width: 600px;
+	margin-left: -70px;
+}
+.upper-block{
+	width: 100%;
+	margin-top:67px;
+	position: relative;
+}
+.upper-block img{
+	width: 100%;
+}
+
+.upper-block__title{
+	padding-left: 20px;
+	position: absolute;
+	top: 80px;
+}
+.upper-block__title h1{
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 5px;
+	color: #fff;	
+	margin: 80px 0px 25px 0px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 0;
+}
+.upper-block__title p{
+	font-size: 25px;
+	color: rgb(10 14 23);
+	font-weight: 700;
+	position: relative;
+	z-index: 0;
+}
+.upper-block__title h1:before{
+	width: 680px;
+	height: 100px;
+	top:0;
+	left: -60px;
+	background: radial-gradient(circle, rgba(0,0,0,0.3) 78%, rgba(20,20,21,0.039) 100%);
+}
+.upper-block__title p:before{
+	width: 280px;
+	height: 35px;
+	top: 0px;
+	left: -30px;
+	background: radial-gradient(circle, rgba(255,255,255,0.7) 78%, rgba(255,255,255,0.039) 100%);
+}
+.upper-block__title h1:before, .upper-block__title p:before{
+	content: '';
+	position: absolute;
+	display: block;
+	border-radius: 8px;
+	transform: skew(30deg);
+	z-index: -1;
+}
+
+
+
+/*-----------------Motopark----------------------*/
+.block-wrapper{
+	padding-top: 100px;
+}
+.title{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+.moto__row{
+	display: grid;
+	column-gap: 30px;
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items:center;
+    padding: 0px 20px 0px 20px;
+}
+.moto__item{
+	width: 100%;
+	text-align: center;
+}
+.moto__image{
+	 position: relative;
+    padding: 0px 0px 75% 0px;
+    margin-bottom: 20px;
+    display: block;
+}
+.moto__image img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.moto__name{
+	display: block;
+	font-size: 22px;
+   margin-bottom: 10px;
+    
+}
+
+.moto__image:hover{
+	opacity: 0.8;
+}
+.moto__name:hover{
+	text-decoration: underline;
+}
+
+/*-----------------Motopark details------------------------*/
+
+.moto__modal_one {
+	display: none;
+}
+.moto__modal_two {
+	display: none;
+}
+.moto__modal_three {
+	display: none;
+}
+.moto__modal_one.active{
+	display: flex;
+}
+.moto__modal_two.active{
+	display: flex;
+}
+.moto__modal_three.active{
+	display: flex;
+}
+
+body.modal{
+	overflow: hidden;
+}
+
+.moto__modal{ 
+	justify-content: center;
+	align-items: center;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: bg 0.5s ease;
+    background: rgb(20 20 21 / 87%);    
+}
+.moto__modal_content{
+	width:80vw;
+	max-width: 950px;
+	max-height: 97vh;
+	background-color: #fff;
+	color:#000;
+	position: relative;	
+	overflow: auto;
+
+}
+
+.moto__modal_text{
+	margin-top: 15px;
+	display: none;
+}
+.moto-slider__image {
+	position: relative;
+    padding: 0px 0px 70% 0px;
+    display: block;
+}
+.moto-slider__image img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.moto__modal_close{
+	position: fixed;
+	z-index: 5;
+	top: 15px;
+    right: 15px;
+}
+.cross{
+	width: 30px;
+}
+/*----------------Conditions-------------------*/
+.conditions__text{
+	padding: 0px 20px;
+}
+/*------------------Galery-------------- -------*/
+.gallery{
+}
+.gallery-slider__image {
+}
+.gallery-slider__image img{
+	max-width: 100%;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+.gallery-slider__wrapper {
+}
+.swiper-wrapper {
+}
+.gallery-slider__slide {
+}
+.swiper-slide {
+}
+.gallery-slider__image {
+	
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+	color: #fff;
+}
+
+.gallery-slider .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: #141415;
+}
+/*----------------Contacts----------------------*/
+.contacts__row{
+	padding: 0px 20px 50px 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.contacts__column{
+	flex: 0 1 48%;
+}
+.contacts__info{
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+.contacts__info_item:not(:last-child){
+	margin-bottom: 20px;
+}
+h2{
+	font-size: 18px;
+	font-weight: 900;
+	margin-bottom: 7px;
+}
+/*Форма*/
+form input{
+	font-size: 14px;
+}
+.form__item{
+	border: 1px solid #fff;
+	border-radius: 5px;
+	position: relative;
+}
+.form__item:not(:last-child){
+	margin-bottom: 10px;
+}
+.form__label{
+	display: block;
+	padding-left: 15px;
+	color: #ffeab9;
+}
+.form__field{
+	width: 100%;
+	padding: 0px 15px 6px;
+	background: none;
+	color: #fff;
+}
+.form_btn{
+	padding: 10px 20px;
+	border-radius: 20px;
+	margin-top: 10px;
+	font-weight: 900;
+	font-size: 14px;
+}
+select{
+	font-size: 14px;
+	/*appearance: none;*/
+}
+
+option{
+	background-color:  rgba(20,20,21,1);
+	font-size: 16px;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.select{
+	width: 96.5%;
+}
+.form_btn:hover{
+	background-color: #e1c481;
+}
+
+.field_focus{
+	box-shadow: 0 0 8px #f8d278;
+}
+
+
+/*убираем желтые поля при автозаполнении инпута*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #141415 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*----------------Footer------------------------*/
+footer{
+	width: 100%;
+	background-color: #433c2e;
+	height: 100px;
+	padding: 27px 10px;
+	text-align: center;
+	font-size: 14px;
+}
+.copyright{
+	margin-bottom: 5px;
+}
+/*-----------------Адатив-----------------------*/
+@media (min-width: 710px) {
+	.moto__name{
+		height: 60px;
+	}
+}
+@media (max-width: 1600px){
+	.upper-block__title{
+		top: 0px;
+	}
+	
+}
+@media (max-width: 1500px){
+	header{
+		padding-top: 15px;
+	}
+}
+@media (max-width: 1300px){
+	.menu__item{
+		padding: 12px 10px;
+	}
+	header a{
+	font-size: 14px;
+	}
+	.upper-block__title{
+		top: -40px;
+	}
+}
+
+@media (max-width: 800px){ /*адаптив меню*/
+	.menu{
+		display: none;
+	}
+	.menu__item{
+		padding: 18px 10px;
+	}
+	header a{
+		font-size: 18px;
+		text-shadow: none;
+	}
+	.menu.active {
+	    display: flex;
+	    flex-direction: column;
+	    position: absolute;
+	    right: 0;
+	    top: 70px;
+	    background-color: rgb(194 169 111 / 95%);
+	        border-radius: 0px 0px 5px 5px;
+	}	
+	/*бургер*/
+	.menu_burger {
+		display: block;
+	    position: relative;
+	    width: 25px;
+	    height: 21px;
+	    cursor: pointer;
+	}
+	.line-top {
+		display: block;
+	    position: absolute;
+	    width: 25px;
+	    height: 3px;
+	    left: 0;
+	    background-color: #fff;
+	}
+	.line-center {
+		display: block;
+	    position: absolute;
+	    width: 25px;
+	    height: 3px;
+	    left: 0;
+	    top:10px;
+	    background-color: #fff;
+	}
+	.line-bottom {
+		display: block;
+	    position: absolute;
+	    width: 25px;
+	    height: 3px;
+	    left: 0;
+	    top:20px;
+	    background-color: #fff;
+	}
+	nav{
+		display: flex;
+    	justify-content: flex-end;
+	}
+	.header__container{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.menu__item:hover{
+		background-color: rgb(0,0,0,0);
+		transition-delay: 0s;
+	}
+	
+}
+
+@media (max-width: 789px){ /*адаптив формы*/
+	.contacts__column{
+		flex: 0 1 100%;
+	}
+}
+
+@media (max-width: 1000px){
+	.container{
+		max-width: 890px;
+	}
+	.upper-block__title h1:before{
+	background: radial-gradient(circle, rgba(0,0,0,0.4) 78%, rgba(20,20,21,0.039) 100%);
+	}
+	.upper-block__title h1{
+		font-size: 35px;
+	}
+	.upper-block__title p {
+		font-size: 21px;
+	}
+	.upper-block__title h1:before {
+		width: 617px;
+		height: 88px;
+	}
+	.upper-block__title p:before {
+		width: 250px;
+		height: 30px;
+	}
+}
+
+@media (max-width: 800px){
+	.upper-block__title h1{
+		font-size: 30px;
+	}
+	.upper-block__title p {
+		font-size: 18px;
+	}
+	.upper-block__title h1:before {
+		width: 550px;
+		height: 72px;
+	}
+	.upper-block__title p:before {
+		width: 217px;
+		height: 25px;
+	}
+	.title {
+		font-size: 35px;
+	}
+}
+@media (max-width: 600px){
+	.upper-block__title h1{
+		font-size: 22px;
+		padding-right: 25px;
+		letter-spacing: 3px;
+	}
+	.upper-block__title p {
+		font-size: 16px;
+	}
+	.upper-block__title h1:before {
+		width: 400px;
+		height: 60px;
+	}
+	.upper-block__title p:before {
+		width: 217px;
+		height: 25px;
+	}
+	.title {
+		font-size: 30px;
+	}
+	.moto__name{
+		font-size: 25px;
+	}
+}
+@media (max-width: 584px){
+	footer{
+		padding: 18px 10px;
+	}
+}
+@media (max-width: 417px){
+	.upper-block__title {
+		top: -60px;
+	}
+	.upper-block__title h1{
+		letter-spacing: 2px;
+	}
+	.upper-block__title h1:before {
+		width: 370px;
+	}
+}
+@media (max-width: 393px){
+	.upper-block__title {
+		top: -60px;
+	}
+}
+
+@media (min-width: 650px) and (max-width:930px) and (min-height: 360px) and (max-height: 430px){
+	.moto__modal_content{
+		width: 67vw;
+		max-height: 97vh;
+	}
+}
+
